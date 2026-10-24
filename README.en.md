@@ -1,15 +1,19 @@
 ---
-description: Add reasoning-effort options for third-party OpenAI-compatible models to the native DSH model menu.
+description: Automatically match reasoning-effort levels to connected third-party models and show each model's available options.
 kind: package-bundle
 ---
 
-# DSH Third-Party Model Reasoning Effort
+# DSH Third-Party Model Reasoning Effort: Automatic Level Matching
 
 [中文](README.md) | English
 
 ## Summary
 
-Expose native DSH reasoning-effort options for third-party OpenAI-compatible models. The plugin matches provider and model IDs against the capability catalog shipped with the installed DSH runtime, with optional gateway-specific overrides. It works on its own; pair it with [dsh-codex-effort-slider](https://github.com/Microqian2th/dsh-codex-effort-slider) for a slider with gradients, particles, and animations. Verified with DSH Desktop `0.2.1-rc.2`.
+**Automatically match reasoning-effort levels to connected third-party models, adapting the available options when you switch or add models.**
+
+Provider and model IDs are matched against DSH's bundled catalog to enable native effort controls for third-party OpenAI-compatible models, with gateway-specific overrides. Matching uses local metadata, not live gateway probing; unknown models receive no guessed levels.
+
+Use it independently, or pair it with [dsh-codex-effort-slider](https://github.com/Microqian2th/dsh-codex-effort-slider) for a slider with gradients, particles, and animations. Verified with DSH Desktop `0.2.1-rc.2`.
 
 ## Contents
 

@@ -1,15 +1,19 @@
 ---
-description: 为 DSH 的第三方 OpenAI 兼容模型补全思考强度档位，并通过原生模型菜单选择。
+description: 根据接入的第三方模型自动匹配思考强度档位，切换模型时显示各自可用的等级。
 kind: package-bundle
 ---
 
-# DSH 第三方模型思考强度
+# DSH 第三方模型思考强度：自动匹配档位
 
 中文 | [English](README.en.md)
 
 ## 简介
 
-让第三方 OpenAI 兼容模型显示 DSH 原生的思考强度选项。插件按提供商和模型 ID 匹配当前 DSH 安装包内的能力目录，也支持针对中转手动覆盖档位和参数值。可以单独使用；搭配 [dsh-codex-effort-slider](https://github.com/Microqian2th/dsh-codex-effort-slider)，可以使用带渐变、粒子和动画的滑条。已在 DSH Desktop `0.2.1-rc.2` 验证。
+**根据接入的第三方模型自动匹配思考强度档位；切换或新增模型时，动态显示各自可用的等级。**
+
+插件按提供商和模型 ID 读取 DSH 随包能力目录，让第三方 OpenAI 兼容模型直接使用原生思考强度菜单，也支持针对中转覆盖档位和参数值。这里的自动匹配依据本地目录，不会实时探测中转接口；未知型号默认不猜档位。
+
+可以独立使用；搭配 [dsh-codex-effort-slider](https://github.com/Microqian2th/dsh-codex-effort-slider)，菜单会以带渐变、粒子和动画的滑条呈现。已在 DSH Desktop `0.2.1-rc.2` 验证。
 
 ## 目录
 
