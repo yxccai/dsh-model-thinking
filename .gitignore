@@ -1,0 +1,8 @@
+node_modules/
+.inspection/
+.test-output/
+lib/
+*.tgz
+.tools/
+.env*
+!.env.example

@@ -1,0 +1,7 @@
+- insert:
+    - id: dsh-model-thinking
+      name: dsh-model-thinking
+      config:
+        autoCatalog: true
+        defaultEfforts: []
+        rules: []
